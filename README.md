@@ -9,6 +9,7 @@ This repository described our scripts and piplines for using Mosaic-seq to funct
 ## File Organization
 
 ## Notebooks
+Plotting Hits -- [Hits_plotting.ipynb](https://github.com/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/Hits_plotting/Hits_plotting.ipynb)
 
 ## Contributors
 
