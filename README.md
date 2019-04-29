@@ -3,11 +3,9 @@
 ## Overview
 This repository described our scripts and piplines for using Mosaic-seq to functionally evaluate enhancers in K562 cells. Through optimization of key parameters of Mosaic-seq, we demonstrate that both primary and secondary target genes can be identified in the assay. Our investigation of > 500 enhancers in K562 cells reveals an enhancer-centric, interwoven regulatory network that converges to reguate the same sub-modules. 
 
-- Workflow
-![Over-view](./MISC/Overview-01.png)
+![Over-view](./MISC/Overview-01.png "Overview")
 
 ## Requirement
-- Python v3.7
 - Numpy
 - Scipy
 - Pandas
@@ -16,14 +14,19 @@ This repository described our scripts and piplines for using Mosaic-seq to funct
 
 ## File Organization
 
-## Notebooks
-Plotting Hits -- [Hits_plotting.ipynb](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/Hits_plotting/Hits_plotting.ipynb)
+## Original Fastq Files
+GEO link: 
 
-GSEA Analysis -- [GSEA_analysis.ipynb](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GSEA_analysis/GSEA_test.ipynb)
+## Notebooks (In developemnt)
+- *Hits Identification*
+	- [Plotting Primary and Secondary Hits](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/Hits_plotting/Hits_plotting.ipynb)
 
-GWAS hits filtering -- [GWAS_data.ipynb](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GWAS-analysis/GWAS_data.ipynb)
+- *Downstream Analysis*
+	- [GSEA Analysis](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GSEA_analysis/GSEA_test.ipynb)
+	- [GEWAS Hits Filtering](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GWAS-analysis/GWAS_data.ipynb)
 
 ## Contributors
-Russell Xie
+* First Author: Russell Xie `shiqi.xie@utsouthwestern.edu`
+* Corresponding Author: Gary Hon `gary.hon@utsouthwestern.edu`
 
 ## How to cite
