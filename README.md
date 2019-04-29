@@ -1,4 +1,11 @@
-# Global-analysis-K562-enhancers
-______
-This repository provides the source code for the publication.
-Please email Russell Xie or Gary Hon for more information.
+# Global Analysis of 500 enhancer in K562 cells with Mosaic-seq
+
+## Overview
+
+## File Organization
+
+## Notebooks
+
+## Contributors
+
+## How to cite
