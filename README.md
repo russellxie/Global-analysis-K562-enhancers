@@ -25,7 +25,7 @@ GEO link:
 
 - *Downstream Analysis*
 	- [GSEA Analysis](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GSEA_analysis/GSEA_test.ipynb?flush_cache=true)
-	- [GEWAS Hits Filtering](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GWAS-analysis/GWAS_data.ipynb?flush_cache=true)
+	- [GWAS Hits Filtering](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GWAS-analysis/GWAS_data.ipynb?flush_cache=true)
 
 ## Contributors
 * First Author: Russell Xie `shiqi.xie@utsouthwestern.edu`
