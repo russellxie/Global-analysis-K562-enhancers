@@ -11,6 +11,8 @@ This repository described our scripts and piplines for using Mosaic-seq to funct
 - Pandas
 - Matplotlib
 - gseapy (for GSEA analysis)
+- NetworkX, Fa2, Bezier (for network analysis)
+
 
 ## File Organization
 
@@ -22,7 +24,9 @@ GEO link:
 	- [Plotting Primary and Secondary Hits](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/Hits_plotting/Hits_plotting.ipynb?flush_cache=true)
 
 - *Network Analysis*
-
+	- [Network Analysis](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/Network_analysis/Call_hits_global.ipynb?flush_cache=true)
+	![Network](./Notebooks/Network_analysis/K562_network.png "Network")
+	
 - *Downstream Analysis*
 	- [GSEA Analysis](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GSEA_analysis/GSEA_test.ipynb?flush_cache=true)
 	- [GWAS Hits Filtering](https://nbviewer.jupyter.org/github/russellxie/Global-analysis-K562-enhancers/blob/master/Notebooks/GWAS-analysis/GWAS_data.ipynb?flush_cache=true)
