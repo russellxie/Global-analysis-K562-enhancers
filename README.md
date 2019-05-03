@@ -10,7 +10,7 @@ This repository described our scripts and piplines for using Mosaic-seq to funct
 - Scipy
 - Pandas
 - Matplotlib
-- [Gseapy](https://github.com/zqfang/GSEApy) 
+- [GSEApy](https://github.com/zqfang/GSEApy) 
 - [NetworkX](https://github.com/networkx/networkx)
 - [Force Atlas 2](https://github.com/bhargavchippada/forceatlas2)
 - [Bezier for NetworkX](https://github.com/beyondbeneath/bezier-curved-edges-networkx)
