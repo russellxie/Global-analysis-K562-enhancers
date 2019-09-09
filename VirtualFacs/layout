@@ -1,0 +1,11 @@
+- Preprocess
+  - Load 10X hdf5 file using scanpy
+  - Load sgRNA file (precalculate the sgRNA information; from another pipeline)
+  - Load annotation file (How this file is generated?)
+  - Remove cells without any detectable sgRNA
+  - Normalization
+  - Remove genes with low expression
+
+- Hypergeometric Test
+  - Key feature:
+    
