@@ -15,11 +15,10 @@ This repository described our scripts and piplines for using Mosaic-seq to funct
 - [Force Atlas 2](https://github.com/bhargavchippada/forceatlas2)
 - [Bezier for NetworkX](https://github.com/beyondbeneath/bezier-curved-edges-networkx)
 
-
 ## File Organization
 
 ## Original Fastq Files
-GEO link:
+GEO accession: [GSE129837](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE129837)
 
 ## Notebooks (In developemnt)
 - *Hits Identification*
@@ -38,3 +37,4 @@ GEO link:
 * Corresponding Author: Gary Hon `gary.hon@utsouthwestern.edu`
 
 ## How to cite
+Xie S, Armendariz D, Zhou P, Duan J, Hon GC<sup>*</sup>. *Global analysis of enhancer targets reveals convergent enhancer-driven regulatory modules*. __Cell Reports__ 2019

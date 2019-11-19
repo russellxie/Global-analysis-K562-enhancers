@@ -52,12 +52,6 @@ def _save_matrix_to_h5(gbm, filename, genome):
         except:
             raise Exception("Failed to write H5 file.")
 
-def _subsample_matrix(gbm, barcode_indices):
-    return GeneBCMatrix(gbm.gene_ids,
-                        gbm.gene_names,
-                        gbm.barcodes[barcode_indices],
-                        gbm.matrix[:, barcode_indices])
-
 def _get_expression(gbm, gene_name):
     gene_indices = np.where(gbm.gene_names == gene_name)[0]
     if len(gene_indices) == 0:
@@ -75,7 +69,7 @@ def _find_sgrna_cells(sgRNA_list, df, gbm):
             cell_index.append(current_idx.item())
     return [x for x in set(cell_index)]
 
-def _hypergeo_test(non_zero_array, sgrna_idx, i):
+def _hypergeom_test(non_zero_array, sgrna_idx, i):
     #find indecies of cells in which expression of given gene is
     #equal or less than the median of this gene in the whole population
     median_cell_idx  = np.argwhere(non_zero_array <= np.median(non_zero_array))
