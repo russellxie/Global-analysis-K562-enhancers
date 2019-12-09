@@ -1,69 +1,10 @@
 #!/usr/bin/env python3
-'''
-2018-03-09
-Ver.0.2 ---- Russell Xie
-This version has updated the plotting function, including:
-1) Reorder the genes from chr1 to chrY in the correct order.
-2) Plot neiboring chromosomes in different color.
-3) Plot a vertical line to indicate the target position.
-
-Ver.0.3 ---- Russell Xie
-Bug Fix: 
-1) move several steps out from the paralelle functions to increase speed. 
-2) fix the bug for inapprorpriate reading of chrX and chrY
-
-Ver.0.4 ---- Russell Xie
-Add option for identifying genes that are up-regulated.
-
-Ver.0.5 ---- Russell Xie
-Improve the multithreading performance
-~30s per region using 48 cores
-
-Ver.0.6 ---- Russell Xie
-Apply test for all 1023 combinations of 10 sgRNAs in every enhancer region. 
-Return a matrix containing all p values
-
-Ver.0.7 ---- Russell Xie
-Normalize matrix by CPM
-
-Ver.0.8 ---- Russell Xie
-Normalize the data to get rid of the batch effect
-
-Ver.0.9 ---- Russell Xie
-Update to match the annotation for hg38, only plot the genes from chr1-22,X
-
-Ver.0.9.4 ---- Russell Xie
-Volcano plot
-
-Ver.0.9.5 ---- Russell Xie
-Ouput p-values on both tails
-Consider all the genes (filter them later)
-
-Ver.0.9.6 ---- Russell Xie
-output the log transformed p-vals
-
-Ver.0.9.7 ---- Russell Xie
-Load precalculated sgRNA file
-
-Note: requires the 'plot_annotation.txt' file to get the correct
-gene position information.
-'''
-#print("Beginning of the Program")
-
 import os
 import sys
 import collections
 import argparse
 import tables
 import itertools
-import matplotlib
-#matplotlib.use('agg')
-
-#change matplotlib font to type II for illustrator
-matplotlib.rcParams['pdf.fonttype'] = 42
-matplotlib.rcParams['ps.fonttype'] = 42
-
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
@@ -75,9 +16,10 @@ from scipy import sparse, io
 from scipy.sparse import csr_matrix
 from multiprocessing import Pool
 
+from _preprocessing import *
+from _util import *
+
 np.random.seed(0)
-GeneBCMatrix = collections.namedtuple('GeneBCMatrix',
-                                      ['gene_ids', 'gene_names', 'barcodes', 'matrix'])
 
 print("Start Analyzing.", file = sys.stderr)
 

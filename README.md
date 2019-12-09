@@ -37,4 +37,5 @@ GEO accession: [GSE129837](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GS
 * Corresponding Author: Gary Hon `gary.hon@utsouthwestern.edu`
 
 ## How to cite
-Xie S, Armendariz D, Zhou P, Duan J, Hon GC<sup>*</sup>. *Global analysis of enhancer targets reveals convergent enhancer-driven regulatory modules*. __Cell Reports__ 2019
+Xie S, Armendariz D, Zhou P, Duan J, Hon GC<sup>*</sup>. *Global analysis of enhancer targets reveals convergent enhancer-driven regulatory modules*. __Cell Reports__. 29, 2570–2578.e5 2019 
+[Link to paper](https://doi.org/10.1016/j.celrep.2019.10.073)

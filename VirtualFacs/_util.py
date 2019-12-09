@@ -16,6 +16,10 @@ from scipy.sparse import csr_matrix
 from multiprocessing import Pool
 
 def _get_matrix_from_h5(filename, genome):
+    '''
+    From the 10X Cell ranger pipeline. 
+    This code only works with the 10X V2 output
+    '''
     GeneBCMatrix = collections.namedtuple('GeneBCMatrix',
                                       ['gene_ids', 'gene_names', 'barcodes', 'matrix'])
 
@@ -101,11 +105,14 @@ def _hypergeom_test(non_zero_array, sgrna_idx, i):
 
 #num_sgrna_cell, pval_list = perform_DE(sgrna_idx, input_array, idx, num_processing)
 def _perform_DE(sgrna_idx, input_array, idx, num_processes, pval_list_down, pval_list_up, fc_list):
+    '''
+    Helper function to calculate the hypergeometric p value. 
+    '''
     nonzero_pval_list_up = []
     nonzero_pval_list_down = []
     nonzero_fc_list = []
     with Pool(processes=num_processes) as p:
-        for pval_down, pval_up, fc in p.starmap(hypergeo_test, zip(
+        for pval_down, pval_up, fc in p.starmap(_hypergeom_test, zip(
                 input_array,
                 itertools.repeat(sgrna_idx),
                 idx)
@@ -142,5 +149,5 @@ def _create_combo(sgrna_list):
             idx = list(zip(*my_array[j]))[0]
             combo_list.append(idx)
     #return a list of tuple, which idicate the indexing of each combination
-    return combo_list;
+    return combo_list
 
